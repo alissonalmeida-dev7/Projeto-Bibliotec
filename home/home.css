@@ -223,44 +223,60 @@ a {
     margin-bottom: 50px;
 }
 
-/*  */
+/* Seção Livros Recomendados*/
 
-.livros-colecao {
-    margin-top: 100px;
-    display: grid;
+.recomendados {
+    padding: 50px 120px;
 
-    grid-template-columns: repeat(4, 10%);
-    gap: 5%;
-
-    justify-content: center;
-
-    text-align: center;
-}
-
-.livros {
     display: flex;
     flex-direction: column;
 
     align-items: center;
+    justify-content: space-between;
+
+    gap: 100px;
+    text-align: center;
+}
+
+.livros-colecao {
+    display: grid;
+
+    grid-template-columns: repeat(4, 20%);
+    gap: 10%;
+
+    justify-content: center;            
+}
+
+.area-livros {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    text-align: center;
+    gap: 10%;
+}
+
+.livros {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: flex-start;
     justify-content: center;
-
-    padding: 80px 20px 50px;
-
-    text-align: center;
-
-    gap: 25px;
 }
 
-h4 {
-    font-size: 1em;
-    width: 80%;
+.livros img {
+    height: 100%;
+    object-fit: contain;
 }
 
-.autores {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.titulo-livro {
+.titulo-livro h3 {
+    font-size: 1.2em;
     text-transform: uppercase;
+}
+
+.autores h4 {
+    font-size: 1em;
+    margin-bottom: 5px;
 }
