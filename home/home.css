@@ -232,9 +232,9 @@ a {
     flex-direction: column;
 
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Distribui espaço entre elementos */
 
-    gap: 100px;
+    gap: 100px; /* Espaço entre título e grid de livros */
     text-align: center;
 }
 
@@ -242,7 +242,7 @@ a {
     display: grid;
 
     grid-template-columns: repeat(4, 20%);
-    gap: 10%;
+    gap: 10%; /* Espaço entre livros (10% de cada coluna) */
 
     justify-content: center;            
 }
@@ -255,7 +255,7 @@ a {
     justify-content: flex-start;
 
     text-align: center;
-    gap: 10%;
+    gap: 10%; /* Espaço entre imagem, título e autor */
 }
 
 .livros {
@@ -279,4 +279,142 @@ a {
 .autores h4 {
     font-size: 1em;
     margin-bottom: 5px;
+}
+
+/* Rodape */
+
+.rodape {
+    background-color: var(--azul-escuro);
+    margin-top: 100px;
+    padding: 50px 120px; /* Espaço interno: 50px (cima/baixo) e 120px (lados) */
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rodape-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinha topo dos itens */
+
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--branco); /* Linha divisoria */
+}
+
+.rodape-logos {
+    display: flex;
+    flex-direction: column;
+    gap: 80px; /* Espaço entre as logos*/
+    align-items: center;
+}
+
+.rodape-logos img {
+    height: 60px;
+    object-fit: contain; /* Mantem proporção sem cortar */
+}
+
+.rodape-colunas {
+    display: flex;
+    gap: 200px; /* Espaço entre colunas */
+    padding-right: 20px;
+}
+
+.rodape-direita {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.rodape-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaço entre título e links */
+}
+
+.rodape-coluna h3 {
+    color: var(--cor-destaque);
+    font-size: 0.95em;                
+    margin-bottom: 10px;   
+}
+
+.rodape-coluna a {
+    color: var(--branco);                   
+    font-size: 0.9em;                       
+    transition: color 0.3s; /* Transição suave de cor */
+}
+
+.rodape-coluna a:hover {
+    color: var(--cor-destaque); /* Link fica turquesa ao passar mouse */
+}
+
+.rodape-direita {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.rodape-redes-sociais {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 160px; /* Espaço entre título e ícones */
+}
+
+.rodape-redes-sociais h3 {
+    color: var(--cor-destaque);            
+    font-size: 0.95em;                                 
+}
+
+.icons-redes {
+    display: flex;                          
+    gap: 20px; /* Espaço entre ícones */
+}
+
+.icons-redes a {
+    display: flex; /* Para centralizar ícone dentro */
+    align-items: center;                    
+    justify-content: center;                
+}
+
+.icones-redes img {
+    width: 30px;                           
+    height: 30px;                           
+    transition: transform 0.3s; /* Transição de transformação suave */
+}
+
+.icons-redes a:hover img {
+    transform: scale(1.2); /* Aumenta ícone 20% ao passar mouse */
+}
+
+.rodape-base {
+    display: flex;                          
+    justify-content: space-between; /* Separa copyright e links */
+    align-items: center;                  
+    
+    font-size: 0.85em;                      
+}
+
+.rodape-base p {
+    color: var(--branco);               
+}
+
+.links-base {
+    display: flex;                          
+    gap: 57px; /* Espaço entre links */
+}
+
+.links-base a {
+    color: var(--branco);                  
+    font-size: 0.9em;                      
+    transition: color 0.3s; /* Transição suave */
+}
+
+.links-base a:hover {
+    color: var(--cor-destaque); /* Muda para turquesa ao passar mouse */
 }
