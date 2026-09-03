@@ -278,16 +278,15 @@ a {
     margin-top: 100px;
     padding: 50px 120px; /* Espaço interno: 50px (cima/baixo) e 120px (lados) */
     
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .rodape-conteudo {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto;
     justify-content: space-between;
-    align-items: flex-start; /* Alinha topo dos itens */
 
     margin-bottom: 50px;
     padding-bottom: 50px;
@@ -297,8 +296,8 @@ a {
 .rodape-logos {
     display: flex;
     flex-direction: column;
-    gap: 105px; /* Espaço entre as logos*/
-    align-items: center;
+    justify-content: space-between; /* Espaço entre as logos*/
+    align-items: flex-start; /* Alinhar no começo (esquerda) */
 }
 
 .rodape-logos img {
@@ -310,13 +309,12 @@ a {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    align-items: center;
 }
 
 .rodape-colunas {
-    display: flex;
-    gap: 200px; /* Espaço entre colunas */
-    padding-right: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px; /* Espaço entre colunas */
 }
 
 .rodape-coluna {
@@ -342,11 +340,10 @@ a {
 }
 
 .rodape-redes-sociais {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
     align-items: center;
-    gap: 160px; /* Espaço entre título e ícones */
 }
 
 .rodape-redes-sociais h3 {
@@ -354,7 +351,7 @@ a {
     font-size: 0.95em;                                 
 }
 
-.icons-redes {
+.icones-redes {
     display: flex;                          
     gap: 20px; /* Espaço entre ícones */
 }
@@ -367,11 +364,11 @@ a {
 
 .icones-redes img {
     width: 30px;                           
-    height: 30px;                           
+    height: 30px;                       
     transition: transform 0.3s; /* Transição de transformação suave */
 }
 
-.icons-redes a:hover img {
+.icones-redes a:hover img {
     transform: scale(1.2); /* Aumenta ícone 20% ao passar mouse */
 }
 
@@ -389,7 +386,7 @@ a {
 
 .links-base {
     display: flex;                          
-    gap: 57px; /* Espaço entre links */
+    gap: 50px; /* Espaço entre links */
 }
 
 .links-base a {
