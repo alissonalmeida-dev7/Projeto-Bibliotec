@@ -277,10 +277,6 @@ a {
     background-color: var(--azul-escuro);
     margin-top: 100px;
     padding: 50px 120px; /* Espaço interno: 50px (cima/baixo) e 120px (lados) */
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .rodape-conteudo {
@@ -374,9 +370,7 @@ a {
 
 .rodape-base {
     display: flex;                          
-    justify-content: space-between; /* Separa copyright e links */
-    align-items: center;                  
-    
+    justify-content: space-between; /* Separa copyright e links */          
     font-size: 0.85em;                      
 }
 
