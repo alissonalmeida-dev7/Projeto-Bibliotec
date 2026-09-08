@@ -2,18 +2,26 @@
 
 // NOT VARIABLE: const nome = "Késsia";
 
-let nome = "Késsia"; // VARIABLE
-console.log(nome);
+// VARIABLE: let nome = "Késsia"; //
 
-nome = "Gustavo";
-console.log(nome);
+// console.log(nome);
+
+// nome = "Gustavo";
+// console.log(nome);
 
 const passwordCamp = document.getElementById("password"); // By ID
 const passwordBtn = document.querySelector("#show-password"); // By ID or CLASS
 
-passwordBtn.addEventListener("click", function() {
-    alert("Cliquei no botão!");
-})
+console.log(passwordBtn.type);
 
-console.log(passwordCamp);
-console.log(passwordBtn);
+passwordBtn.addEventListener("click", function() {
+    // if(passwordCamp.type == "password") {
+    //     passwordCamp.type = "text"
+    // }
+
+    // else {
+    //     passwordCamp.type = "password"
+    // }
+
+    passwordCamp.type = passwordCamp.type == "password" ? "text" : "password";
+})
