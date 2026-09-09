@@ -13,6 +13,7 @@
     --cor-destaque: #2FD6CB;
     --fundos: #E9F0EF;
     --textos-paginas: #535353;
+    --cor-bordas: #CCCCCC;
 }
 
 body {
@@ -59,4 +60,173 @@ a {
     text-transform: uppercase;
     font-size: 1rem; /* Equivale a 16px */
     font-weight: 500;
+}
+
+/* PRINCIPAL PAGE LAYOUT */
+
+/* PAGE */
+
+.listing-page {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+/* SIDE MENU */
+
+.side-menu {
+    background-color: var(--azul-escuro);
+
+    height: 100vh;
+
+    border-radius: 0 30px 30px 0;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px 50px;
+}
+
+/* MENU TOP */
+
+.menu-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exit-button {
+    /* width and height of button */
+    width: 40px;
+    height: 40px;
+
+    font-size: 22px; /* fix size of icon*/
+
+    border-radius: 50%;
+    border: 2px solid var(--cor-destaque);
+
+    background-color: transparent;
+    color: var(--branco);
+
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+/* LOGO */
+
+.logo {
+    margin-top: 10%;
+    margin-bottom: 30%;
+    width: 40%;
+}
+
+.navigation-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.menu-item:hover {
+    color: var(--cor-destaque);
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--cor-destaque);
+}
+
+.menu-item i {
+    width: 30px;
+    font-size: 1.5em;
+}
+
+.menu-item.active {
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--cor-destaque);
+}
+
+/* RETURN BUTTOM */
+
+.return-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: auto;
+}
+
+.return-button i {
+    font-size: 30px;
+}
+
+.return-button:hover {
+    color: var(--cor-destaque);
+}
+
+/* Content */
+
+.listing-content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5%;
+
+    padding: 30px 60px;
+
+    background-color: var(--branco);
+
+    background-image: url(../imgs/fundo-telas.svg);
+
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: right bottom;
+
+    height: 100vh;
+}
+
+/* HEADER MAIN */
+
+.header-page h1 {
+    font-size: 2em;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.header-page p {
+    font-size: 1.2em;
+    color: var(--textos-paginas);
+}
+
+/* PRINCIPAL CARD */
+
+.listing-card {
+    backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, 0.3);
+
+    border-radius: 30px;
+
+    padding: 40px;
+
+    height: auto;
+
+    box-shadow: 
+        inset 0 20px 50px rgba(255, 255, 255, 0.5), /* inset -> Intern shadow */
+        0 4px 4px rgba(0, 0, 0, 0.25); /* Extern shadow */
+
+    display: flex;
+    flex-direction: column;
 }
