@@ -143,6 +143,14 @@
     justify-self: flex-start;
 }
 
+.loading-status {
+    color: #D34A00;
+}
+
+.removed-status {
+    color: #00A223;
+}
+
 /* CHECKBOX */
 
 input[type="checkbox"] {
