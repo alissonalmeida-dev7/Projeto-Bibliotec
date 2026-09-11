@@ -598,6 +598,10 @@
         flex-direction: row;
     }
 
+    .rodape-logos img {
+        width: 40%;
+    }
+
     .rodape-base {
         display: flex;
         flex-direction: row;
@@ -608,4 +612,62 @@
         gap: 20px;
         text-align: right;
     }
+}
+
+@media (max-width: 500px) {
+    .banner-principal img {
+        width: 70%;
+    }
+
+    .beneficios-lista {
+        grid-template-columns: repeat(3, 65%);
+    }
+
+    .beneficio-icone {
+        width: 35%;
+    }
+
+    .banner-meio {
+        background-position: 40%;
+    }
+
+    /* FOOTER */
+
+    .rodape-conteudo {
+        gap: 50px;
+    }
+
+    .rodape-colunas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rodape-logos {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .rodape-logos img {
+        width: 100%;
+    }
+
+    .icones-redes img {
+        width: 80%;
+    }
+
+    .rodape-base {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .links-base {
+        gap: 10px;
+        text-align: left;
+    }
+
+
+
+
+
+    
 }
